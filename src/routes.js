@@ -11,6 +11,11 @@ const routes = [
     method: 'POST',
     path: '/notes',
     handler: addNoteHandler,
+    options: {
+      cors: {
+        origin: ['*'],
+      },
+    },
   },
   {
     method: 'GET',
@@ -35,4 +40,3 @@ const routes = [
 ];
 
 module.exports = routes;
-

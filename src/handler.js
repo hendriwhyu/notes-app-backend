@@ -15,7 +15,6 @@ const addNoteHandler = (request, h) => {
     createdAt,
     updatedAt,
   };
-
   notes.push(newNote);
 
   const isSuccess = notes.filter((note) => note.id === id).length > 0;
@@ -62,12 +61,10 @@ const getNoteByIdHandler = (request, h) => {
       },
     };
   }
-
   const response = h.response({
     status: 'fail',
     message: 'Catatan tidak ditemukan',
   });
-
   response.code(404);
   return response;
 };
@@ -88,7 +85,6 @@ const editNoteByIdHandler = (request, h) => {
       body,
       updatedAt,
     };
-
     const response = h.response({
       status: 'success',
       message: 'Catatan berhasil diperbarui',
@@ -102,7 +98,6 @@ const editNoteByIdHandler = (request, h) => {
     status: 'fail',
     message: 'Gagal memperbarui catatan. Id tidak ditemukan',
   });
-
   response.code(404);
   return response;
 };
@@ -126,7 +121,6 @@ const deleteNoteByIdHandler = (request, h) => {
     status: 'fail',
     message: 'Catatan gagal dihapus. Id tidak ditemukan',
   });
-
   response.code(404);
   return response;
 };
@@ -138,4 +132,3 @@ module.exports = {
   editNoteByIdHandler,
   deleteNoteByIdHandler,
 };
-
