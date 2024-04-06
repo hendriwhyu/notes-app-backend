@@ -1,0 +1,42 @@
+[33mcommit 73b654f0d24d2ddfcd3d2f4c4db42628573629d8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Hendri Wahyu Perdana <hendriwp123@gmail.com>
+Date:   Sat Apr 6 15:04:53 2024 +0700
+
+    fix: bugs package json for prod
+
+[33mcommit b78e205d4dfe0e08599a0e302777ffe607586d55[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Hendri Wahyu Perdana <hendriwp123@gmail.com>
+Date:   Sat Apr 6 14:54:53 2024 +0700
+
+    fix: bugs package json
+
+[33mcommit 74d0f0a439ad1aa15fba3f1955df43c5be636c3c[m
+Author: Hendri Wahyu Perdana <hendriwp123@gmail.com>
+Date:   Sat Apr 6 14:53:22 2024 +0700
+
+    fix: bugs host value
+
+[33mcommit fdd36b4351ae25cc0a63f496dbaacc4aefdbd224[m
+Merge: 89959cb a1ccc74
+Author: Hendri Wahyu Perdana <hendriwp123@gmail.com>
+Date:   Sat Apr 6 14:00:40 2024 +0700
+
+    Merge branch 'master' of https://github.com/hendriwhyu/notes-app-backend
+
+[33mcommit 89959cbd537a0bb5d7fe187a7a2d861324f11c39[m
+Author: Hendri Wahyu Perdana <hendriwp123@gmail.com>
+Date:   Sat Apr 6 13:33:19 2024 +0700
+
+    initial commit
+
+[33mcommit a1ccc7459655029a2a02e3b5ee9a1284dfb8e49e[m
+Author: hendriwhyu <hendriwp123@gmail.com>
+Date:   Tue Jul 25 21:44:16 2023 +0700
+
+    postman(newman)
+
+[33mcommit 771f07b19fd4b08ff3800aed8d08eb730d0b2fb1[m
+Author: hendriwhyu <hendriwp123@gmail.com>
+Date:   Mon Jul 24 12:55:16 2023 +0700
+
+    initial commit

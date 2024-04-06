@@ -14,7 +14,6 @@ const init = async () => {
     },
   });
 
-  console.log(process.env.NODE_ENV);
   server.route(routes);
 
   await server.start();
