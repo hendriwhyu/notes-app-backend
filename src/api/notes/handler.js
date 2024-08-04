@@ -49,7 +49,7 @@ class NotesHandler {
   async putNoteByIdHandler(request, h) {
     this._validator.validateNotePayload(request.payload);
     const { id } = request.params;
-    await this._service.editNoteById(id, request.payload);
+    const note = await this._service.editNoteById(id, request.payload);
     return {
       status: 'success',
       message: 'Catatan berhasil diperbarui',
