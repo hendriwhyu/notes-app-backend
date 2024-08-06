@@ -7,17 +7,20 @@ services:
     image: notesapp
     container_name: notesapp
     ports:
-      - "3000:3000"
+      - 3000:3000
     env_file:
       - .env
     depends_on:
       - db
   db:
-    image: postgres:13
-    env_file:
-      - .env
+    image: postgres:13.4
+    environment:
+    - POSTGRES_USER=postgres
+    - POSGRES_HOST=localhost
+    - POSTGRES_PASSWORD=drx@1412
+    - POSTGRES_DB=notesapp
     ports:
-      - "5432:5432"
+      - 5432:5432
     volumes:
       - pgdata:/var/lib/postgresql/data
 volumes:
