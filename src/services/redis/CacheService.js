@@ -16,13 +16,13 @@ class CacheService {
   }
 
   async set(key, value, expirationInSecond = 3600) {
-    await this._client.set(key, value, {
+    await this._client.SET(key, value, {
       EX: expirationInSecond,
     });
   }
 
   async get(key) {
-    const result = await this._client.get(key);
+    const result = await this._client.GET(key);
 
     if (result === null) throw new Error('Cache tidak ditemukan');
 
